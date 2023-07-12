@@ -15,17 +15,37 @@
                 Naba</span></h1>
     </header>
     <main>
-        <section>
-            <div class="grid grid-cols-3 gap-4 mx-0">
-                <div class="bg-red-400 rounded-lg py-4 px-2">
-                    <h3 class="text-2xl">Deposit</h3>
-                    <h2 class="text-4xl">$<span>00</span></h2>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-sky-400 rounded-lg p-8 text-white">
+                    <h3 class="text-2xl mb-2">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="diposit-amount">00</span></h2>
                 </div>
-                <div class="bg-red-400">
-                    <h3 class="text-2xl">Deposit</h3>
-                    <h2 class="text-4xl">$<span>00</span></h2>
+                <div class="bg-purple-500 rounded-lg p-8 text-white">
+                    <h3 class="text-2xl mb-2">Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="withdraw-amount">00</span></h2>
                 </div>
+                <div class="bg-red-500 rounded-lg p-8 text-white">
+                    <h3 class="text-2xl mb-2">Total Balance</h3>
+                    <h2 class="text-5xl">$<span id="total-amount">1200</span></h2>
+                </div>
+            </div>
+        </section>
 
+        <section class="mt-6">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-green-400 rounded-lg p-8 text-white">
+                    <input id="deposit-filed" class="p-2 rounded-md block mb-3 w-9/12" type="text"
+                        placeholder="Please enter your deposit amount">
+                    <button id="deposit-button"
+                        class="bg-blue-500 p-2 rounded-lg text-mb  hover:bg-blue-700">Submit</button>
+                </div>
+                <div class="bg-orange-400 rounded-lg p-8 text-white">
+                    <input id="withdraw-field" class="p-2 rounded-md block mb-3 w-9/12" type="text"
+                        placeholder="Please enter your withdraw amount">
+                    <button id="withdraw-button"
+                        class="bg-red-600 p-2 rounded-lg text-mb  hover:bg-red-800">Submit</button>
+                </div>
             </div>
         </section>
     </main>
