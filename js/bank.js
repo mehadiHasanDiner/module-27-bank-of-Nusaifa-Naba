@@ -7,7 +7,7 @@ document
     depositAmount.value = "";
 
     if (isNaN(newDepositAmount)) {
-      alert("Please enter a valid deposit amount");
+      alert("আন্দাজে কি-বোর্ড চাইপেন না। আল্লাহরওয়াস্তে নাম্বার ইনপুট দেন");
       return;
     }
 
@@ -23,6 +23,6 @@ document
     const totalBalanceString = totalBalanceText.innerText;
     const currentTotalBalance = parseFloat(totalBalanceString);
 
-    const totalBalance = currentTotalBalance + newTotalDeposit;
+    const totalBalance = currentTotalBalance + newDepositAmount;
     totalBalanceText.innerText = totalBalance;
   });
